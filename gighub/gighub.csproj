@@ -178,9 +178,16 @@
     <Compile Include="Migrations\202101251910132_InitialIdentityModel.designer.cs">
       <DependentUpon>202101251910132_InitialIdentityModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101252112139_CreateGigTable.cs" />
+    <Compile Include="Migrations\202101252112139_CreateGigTable.designer.cs">
+      <DependentUpon>202101252112139_CreateGigTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -261,6 +268,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202101251910132_InitialIdentityModel.resx">
       <DependentUpon>202101251910132_InitialIdentityModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101252112139_CreateGigTable.resx">
+      <DependentUpon>202101252112139_CreateGigTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
