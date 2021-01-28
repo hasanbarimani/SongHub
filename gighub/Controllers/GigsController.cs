@@ -1,5 +1,6 @@
 ﻿using gighub.Models;
 using gighub.ViewModels;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +17,8 @@ namespace gighub.Controllers
         {
             _context = new ApplicationDbContext();
         }
-        // GET: Gigs
-        public ActionResult Create()    
+        [Authorize]
+        public ActionResult Create()
         {
             GigFormViewModel viewModel = new GigFormViewModel
 
@@ -25,6 +26,25 @@ namespace gighub.Controllers
                 Genres = _context.Genres.ToList()
             };
             return View(viewModel);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public ActionResult Create(GigFormViewModel viewModel)
+        {
+
+            var gig = new Gig
+            {
+                ArtistId = User.Identity.GetUserId(),
+                DateTime = viewModel.DateTime,
+                GenreId = viewModel.Genre,
+                Venue = viewModel.Venue
+
+            };
+            _context.Gigs.Add(gig);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Home");
+
         }
     }
 }
