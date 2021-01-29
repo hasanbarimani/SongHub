@@ -195,6 +195,10 @@
     <Compile Include="Migrations\202101281314423_ModifyGigModel.designer.cs">
       <DependentUpon>202101281314423_ModifyGigModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101290906393_ModifyGenreDataTypeInGigMolde.cs" />
+    <Compile Include="Migrations\202101290906393_ModifyGenreDataTypeInGigMolde.designer.cs">
+      <DependentUpon>202101290906393_ModifyGenreDataTypeInGigMolde.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -295,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101281314423_ModifyGigModel.resx">
       <DependentUpon>202101281314423_ModifyGigModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101290906393_ModifyGenreDataTypeInGigMolde.resx">
+      <DependentUpon>202101290906393_ModifyGenreDataTypeInGigMolde.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
