@@ -9,6 +9,7 @@ namespace gighub.ViewModels
 {
     public class ValidTime:ValidationAttribute
     {
+        
         public override bool IsValid(object value)
         {
             DateTime datetime;
