@@ -22,6 +22,11 @@ select,
 textarea {
     max-width: 280px;
 }
+
+span.field-validation-error {
+    color: red;
+    font-weight: bold;
+}
 /*Bootstrpe ovrride*/
 .navbar-inverse {
     background-color: rgba(198,19,19,1);
@@ -60,7 +65,7 @@ body {
 
 .form-control {
     font-size: 17px;
-    padding: 20px 15px;
+    padding: 5px 15px;
     border-radius: 9px;
 }
 
@@ -73,5 +78,11 @@ body {
 .btn {
     font-size: 17px;
     padding: 7px 20px;
+    border-radius: 9px;
+}
+
+.form-control {
+    font-size: 17px;
+    padding: 5px 15px;
     border-radius: 9px;
 }
