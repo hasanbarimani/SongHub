@@ -86,3 +86,16 @@ body {
     padding: 5px 15px;
     border-radius: 9px;
 }
+/* page-level style*/
+.gigs > li {
+    color: red;
+    background: red;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+    .gigs > li > .details {
+        position: absolute;
+        top: 0;
+        left: 70px;
+    }
