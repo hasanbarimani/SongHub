@@ -17,7 +17,11 @@ namespace gighub.Controllers
         public FollowingsController()
         {
             _context = new ApplicationDbContext();
+           
         }
+
+
+
         [HttpPost]
         public IHttpActionResult Follow(FollowingDto dto)
         {

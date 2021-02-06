@@ -1,0 +1,12 @@
+﻿@model IEnumerable<gighub.Models.ApplicationUser>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Who I Follow</h2>
+<ul class="list-group">
+    @foreach (var artist in Model)
+    {
+        <li class="list-group-item">@artist.Name</li>
+
+    }
+</ul>

@@ -127,7 +127,6 @@ body {
 
 
         .gigs > li .details .artist {
-            width: 110px;
             font-weight: bold;
             display: block;
         }
@@ -135,3 +134,10 @@ body {
         .gigs > li .details .genre {
             font-size: 15px;
         }
+
+/*.AristNameInFollow {
+    list-style: none;
+    padding: 7px;
+    font-weight: bold;
+}
+*/
