@@ -82,6 +82,7 @@ body {
 }
 
 .form-control {
+    height:40px;
     font-size: 17px;
     padding: 5px 15px;
     border-radius: 9px;
@@ -94,8 +95,9 @@ body {
     .gigs > li {
         position: relative;
         margin-bottom: 30px;
+        width:210px;
     }
-
+    
         .gigs > li .details {
             position: absolute;
             top: 0;
@@ -135,9 +137,11 @@ body {
             font-size: 15px;
         }
 
-/*.AristNameInFollow {
-    list-style: none;
-    padding: 7px;
-    font-weight: bold;
-}
-*/
+        .gigs > li .actions {
+            font-size: 15px;
+            display: none;
+        }
+
+        .gigs > li:hover .actions {
+            display: block;
+        }
